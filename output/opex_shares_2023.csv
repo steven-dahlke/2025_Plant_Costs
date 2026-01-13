@@ -1,0 +1,5 @@
+technology_description,opex_operations,opex_fuel,opex_steam,opex_boiler,opex_misc,opex_other
+Coal,1.8,68.9,4.9,7.5,4.9,12.0
+Natural Gas Fired CC,1.0,86.6,0.6,0.2,2.4,9.2
+Natural Gas Fired CT,1.1,82.6,0.8,0.3,2.4,12.8
+Nuclear,7.9,20.2,4.7,5.5,25.5,36.1

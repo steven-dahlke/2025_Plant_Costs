@@ -1,0 +1,10 @@
+Technology Group,Mean Capacity (MW),Median Capacity (MW),Min Capacity (MW),Max Capacity (MW),Std. Dev. Capacity (MW),IQR Capacity (MW)
+Nuclear,1218.89,1148.10,219.53,2667.00,702.45,1068.50
+Natural Gas Fired Combined Cycle,731.38,603.00,25.00,4100.00,594.75,631.41
+Conventional Steam Coal,712.02,532.63,14.90,3499.00,678.10,713.62
+Other Natural Gas,549.59,317.00,13.53,2491.00,558.41,659.25
+Natural Gas Fired Combustion Turbine,264.28,151.00,13.00,2245.00,299.57,293.10
+Onshore Wind Turbine,166.69,137.65,9.00,816.55,171.11,136.83
+Other,101.37,41.95,2.00,805.00,163.87,68.00
+Solar Photovoltaic,66.93,74.50,10.00,161.28,28.83,24.50
+Geothermal,38.10,38.10,38.10,38.10,,0.00

@@ -1,0 +1,54 @@
+--- Capex Percentage Breakdown for 1995 and 2023 ---
+
+Technology: Coal
+  Year: 1995
+    - Capex Land: 0.47%
+    - Capex Structures: 17.77%
+    - Capex Equipment: 81.75%
+  Year: 2023
+    - Capex Land: 0.67%
+    - Capex Structures: 13.80%
+    - Capex Equipment: 85.53%
+
+Technology: Natural Gas Fired CC
+  Year: 1995
+    - Capex Land: 0.72%
+    - Capex Structures: 21.09%
+    - Capex Equipment: 78.19%
+  Year: 2023
+    - Capex Land: 0.68%
+    - Capex Structures: 12.56%
+    - Capex Equipment: 86.76%
+
+Technology: Natural Gas Fired CT
+  Year: 1995
+    - Capex Land: 0.46%
+    - Capex Structures: 15.13%
+    - Capex Equipment: 84.42%
+  Year: 2023
+    - Capex Land: 0.52%
+    - Capex Structures: 9.22%
+    - Capex Equipment: 90.26%
+
+Technology: Nuclear
+  Year: 1995
+    - Capex Land: 0.43%
+    - Capex Structures: 26.91%
+    - Capex Equipment: 72.66%
+  Year: 2023
+    - Capex Land: 0.21%
+    - Capex Structures: 23.57%
+    - Capex Equipment: 76.22%
+
+
+--- Weighted Average Capex Percentages Across Technologies (1995 & 2023) ---
+
+Year: 1995
+  - Weighted Avg Land: 0.49%
+  - Weighted Avg Structures: 19.88%
+  - Weighted Avg Equipment: 79.62%
+
+Year: 2023
+  - Weighted Avg Land: 0.58%
+  - Weighted Avg Structures: 13.92%
+  - Weighted Avg Equipment: 85.49%

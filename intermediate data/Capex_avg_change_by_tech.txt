@@ -1,0 +1,37 @@
+--- Average Annual Rate of Change in Capex ---
+
+Technology: Coal
+Period: 1995-2023
+  Start Capex (1995): $466,083.83/MW
+  End Capex (2023): $1,248,150.18/MW
+  Average Annual Rate of Change: 3.58%
+
+Technology: Natural Gas Fired CC
+Period: 1995-2023
+  Start Capex (1995): $379,054.90/MW
+  End Capex (2023): $686,018.37/MW
+  Average Annual Rate of Change: 2.14%
+
+Technology: Natural Gas Fired CT
+Period: 1995-2023
+  Start Capex (1995): $212,377.12/MW
+  End Capex (2023): $420,237.73/MW
+  Average Annual Rate of Change: 2.47%
+
+Technology: Nuclear
+Period: 1995-2023
+  Start Capex (1995): $1,112,551.82/MW
+  End Capex (2023): $2,442,925.58/MW
+  Average Annual Rate of Change: 2.85%
+
+Technology: Onshore Wind Turbine
+Period: 2010-2023
+  Start Capex (2010): $1,799,577.38/MW
+  End Capex (2023): $1,692,577.46/MW
+  Average Annual Rate of Change: -0.47%
+
+Technology: Solar Photovoltaic
+Period: 2016-2023
+  Start Capex (2016): $1,286,839.72/MW
+  End Capex (2023): $1,451,142.95/MW
+  Average Annual Rate of Change: 1.73%

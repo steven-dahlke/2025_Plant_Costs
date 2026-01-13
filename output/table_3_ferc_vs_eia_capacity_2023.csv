@@ -1,0 +1,14 @@
+Technology Group,Number of Unique Plants,FERC Sample: Total Capacity (MW),% of Sample's Total Capacity,EIA National: Total Capacity (MW),FERC as % of National Capacity (Coverage)
+Batteries,,0.00,,16090.90,0.00
+Conventional Steam Coal,164.00,116771.85,29.65,192601.90,60.63
+Geothermal,1.00,38.10,0.01,4009.50,0.95
+Hydroelectric,,0.00,,102139.60,0.00
+Natural Gas Fired Combined Cycle,147.00,107513.52,27.30,327903.40,32.79
+Natural Gas Fired Combustion Turbine,227.00,59992.61,15.23,156353.80,38.37
+Nuclear,34.00,41442.13,10.52,100674.60,41.16
+Onshore Wind Turbine,34.00,5667.50,1.44,147997.80,3.83
+Other,98.00,9934.48,2.52,51993.50,19.11
+Other Natural Gas,81.00,44516.47,11.30,88002.10,50.59
+Solar Photovoltaic,119.00,7965.13,2.02,91219.20,8.73
+Solar Thermal,,0.00,,1497.00,0.00
+Total,,393841.79,,1280483.30,30.76
