@@ -239,7 +239,11 @@ df_rc['capex_flow']      = df_rc.groupby(level=0)['capex_total'].diff()
 df_rc['d_capacity_mw_x'] = df_rc.groupby(level=0)['capacity_mw_x'].diff()
 
 # Drop first year per plant (no lag to diff)
+df_rc['year_gap'] = df_rc.groupby(level=0)['report_year'].diff()
 df_flow_rc = df_rc.dropna(subset=['capex_flow']).copy()
+n_gap_flows = (df_flow_rc['year_gap'] > 1).sum()
+df_flow_rc = df_flow_rc[df_flow_rc['year_gap'] == 1].copy()
+print(f"Dropped {n_gap_flows} flows spanning missing report years.")
 print(f"Flow sample: {df_flow_rc.shape[0]} rows, "
       f"{df_flow_rc.index.get_level_values(0).nunique()} plants")
 
@@ -278,8 +282,8 @@ for t in event_years:
 event_vars_rc = [f'event_{t}' for t in valid_event_years_rc]
 
 event_formula_rc = f"""
-capex_flow ~ {' + '.join(event_vars_rc)}
-             + d_capacity_mw_x
+capex_flow ~ is_coal_ge25mw_allvintages + {' + '.join(event_vars_rc)}
+             + d_capacity_mw_x + TimeEffects
 """
 
 print(f"\nRunning robustness model ({len(event_vars_rc)} event indicators, 1995 baseline)...")
@@ -317,7 +321,7 @@ for t in valid_event_years_rc:
     )
 
 event_vars_main = [f'event_main_{t}' for t in valid_event_years_rc]
-event_formula_main = f"capex_flow ~ {' + '.join(event_vars_main)} + d_capacity_mw_x"
+event_formula_main = f"capex_flow ~ is_coal_ge25mw_pre2001 + {' + '.join(event_vars_main)} + d_capacity_mw_x + TimeEffects"
 
 model_main_rc = PanelOLS.from_formula(event_formula_main, data=df_flow_rc)
 res_main_rc   = model_main_rc.fit(cov_type='clustered', cluster_entity=True)

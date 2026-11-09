@@ -37,7 +37,11 @@ df['capex_flow'] = df.groupby(level=0)['capex_total'].diff()
 df['d_capacity_mw_x'] = df.groupby(level=0)['capacity_mw_x'].diff()
 
 # Drop first year per plant (no lag to diff)
+df['year_gap'] = df.groupby(level=0)['report_year'].diff()
 df_flow = df.dropna(subset=['capex_flow']).copy()
+n_gap_flows = (df_flow['year_gap'] > 1).sum()
+df_flow = df_flow[df_flow['year_gap'] == 1].copy()
+print(f"Dropped {n_gap_flows} flows spanning missing report years.")
 print(f"Flow sample size: {df_flow.shape[0]} rows across {df_flow.index.get_level_values(0).nunique()} plants.")
 
 # Event Study Implementation 
@@ -78,8 +82,8 @@ for t in valid_event_years:
 
 # Build the event study formula (intercept included by default)
 event_formula = f"""
-capex_flow ~ {' + '.join(event_vars)}
-             + d_capacity_mw_x
+capex_flow ~ is_coal_ge25mw_pre2001 + {' + '.join(event_vars)}
+             + d_capacity_mw_x + TimeEffects
 """
 
 print(f"Event study includes {len(event_vars)} event time indicators (1995 omitted as baseline)")

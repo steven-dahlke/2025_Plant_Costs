@@ -1,0 +1,10 @@
+linearmodels==6.1
+numpy==2.3.3
+pandas==2.3.3
+scipy==1.16.2
+statsmodels==0.14.5
+formulaic==1.2.1
+matplotlib==3.10.7
+seaborn==0.13.2
+plotly==7.1.0
+pyarrow==22.0.0
